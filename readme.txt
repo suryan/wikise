@@ -12,9 +12,12 @@ Python libraries  :
 
 > python wikise_server.py
 
-1. localhost: http://localhost:8000
-2. Json response http://localhost:8000/info/?article=<article name>
-  Example: http://localhost:8000/info/?article=eclipse
+  1. localhost: http://localhost:8000  
+     Example : http://en.wikipedia.org/wiki/Malkin_Tower 
+               on submit returns revision ids 
+
+  2. Json response http://localhost:8000/info/?article=<article name>
+     Example: http://localhost:8000/info/?article=eclipse
 
 
 
@@ -77,4 +80,5 @@ Django Project
 |-- wsgiserver.py
 `-- wsgiserver.pyc
 
-
+5. To dos
+   1.  unit tests
