@@ -16,6 +16,8 @@ Python libraries  :
 2. Json response http://localhost:8000/info/?article=<article name>
   Example: http://localhost:8000/info/?article=eclipse
 
+
+
 -------------------------|  
 3. Change Log            | 
 -------------------------|  
