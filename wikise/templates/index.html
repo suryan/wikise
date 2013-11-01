@@ -23,13 +23,13 @@ $(document).ready(function(){
 <p><font color="red">{{error_message}}</font></p>
   <form action="." autocomplete="on" method="post">
     {% csrf_token %}
-    WIKI URL: <input type="url" name="wiki_url" value="{{ wiki_url }}"><br>
+    WIKI URL: <input type="url" name="wiki_url" value="{{ wiki_url }}" style="width: 500px;" ><br>
     <input type="submit">
   </form>
   <table id='main_table'>
   <thead>
   <tr>
-     <th>REVISIONS IDS</th>
+     <th>REVISION ID</th>
   </tr>   
   </thead>
   <tbody>

@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # Examples:
     (r'^$', index),
     (r'^index/$', index),
+    (r'^info/$', info),
     # url(r'^$', 'wikise.views.home', name='home'),
     # url(r'^wikise/', include('wikise.foo.urls')),
 

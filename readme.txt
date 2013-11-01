@@ -11,11 +11,19 @@ start webserver  with command
 
 > python wikise_server.py
 
-
+1. localhost: http://localhost:8000
+2. Json response http://localhost:8000/info/?article=<article name>
+  Example: http://localhost:8000/info/?article=eclipse
 
 ----------------------|  
- HISTORY              | 
+Change Log            | 
 ----------------------|  
+
+Release notes 0.4
+-------------------------
+1. Added json reponse http://localhost:8000/info/?article=<article name>
+
+
 Release notes: 0.3
 ---------------------------
 1. Added Wiki article Revisions fetch page
