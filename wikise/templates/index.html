@@ -2,9 +2,44 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>wikise</title>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+ 
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+ 
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	  $('#main_table').dataTable();
+	});
+</script>
 </head>
 <body>
-<h3>{{ message }}</h3>
+<p><font color="red">{{error_message}}</font></p>
+  <form action="." autocomplete="on" method="post">
+    {% csrf_token %}
+    WIKI URL: <input type="url" name="wiki_url" value="{{ wiki_url }}"><br>
+    <input type="submit">
+  </form>
+  <table id='main_table'>
+  <thead>
+  <tr>
+     <th>REVISIONS IDS</th>
+  </tr>   
+  </thead>
+  <tbody>
+   	{% for item in revision_ids %}      
+    <tr> 
+		 <td align="center"><a href ="http://en.wikipedia.org/w/index.php?title={{article}}&oldid={{item}}" target="_blank" >{{item}}</a></td>			
+    </tr>
+    {% endfor %}
+  </tbody>
+  </table>
+  
 </body>
 </html>
