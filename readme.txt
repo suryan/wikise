@@ -1,5 +1,4 @@
 
-
 1. Prerequisites
 
 Python libraries  :
@@ -28,26 +27,30 @@ Alternate webserver (High Performance)
 3. Change Log            | 
 -------------------------|  
 
+Release notes 0.5
+-----------------
+ 1. Corrected UWSGI config 
+
 Release notes 0.4
 -------------------------
-1. Added json reponse http://localhost:8000/info/?article=<article name>
+ 1. Added json reponse http://localhost:8000/info/?article=<article name>
 
 
 Release notes: 0.3
 ---------------------------
-1. Added Wiki article Revisions fetch page
-2. Moved Cherrypy webserver to third party 
-3. uwsgi config for starting server on uwsgi server   
+ 1. Added Wiki article Revisions fetch page
+ 2. Moved Cherrypy webserver to third party 
+ 3. uwsgi config for starting server on uwsgi server   
 
 
 -------------------
 Release notes: 0.2 
 ----------------------
-Cherrypy webserver for better scaling 
+ Cherrypy webserver for better scaling 
 
 Release notes: 0.1 
 ---------------------
-Django Project 
+ Django Project 
 
 
 
