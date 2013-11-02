@@ -10,7 +10,7 @@ Python libraries  :
 ------------------------------------------------------------------------
 2. Start webserver  with command 
 
-> python wikise_server.py
+  > python wikise_server.py
 
   1. localhost: http://localhost:8000  
      Example : http://en.wikipedia.org/wiki/Malkin_Tower 
@@ -19,7 +19,10 @@ Python libraries  :
   2. Json response http://localhost:8000/info/?article=<article name>
      Example: http://localhost:8000/info/?article=eclipse
 
-
+Alternate webserver (High Performance)
+  1. Modfiy file uwsgi.ini with correct directory path .
+  2. Starting webserver on UWSGI
+    > uwsgi --ini uwsgi.ini
 
 -------------------------|  
 3. Change Log            | 
