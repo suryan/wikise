@@ -27,6 +27,10 @@ Alternate webserver (High Performance)
 3. Change Log            | 
 -------------------------|  
 
+Release notes 0.6
+-----------------
+ 1. Bug fix : Display network errors correctly 
+
 Release notes 0.5
 -----------------
  1. Corrected UWSGI config 

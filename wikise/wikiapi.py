@@ -23,7 +23,7 @@ def fetch(article,attribs) :
         resp = requests.post('http://en.wikipedia.org/w/index.php',
                              params = params)
     except requests.exceptions.RequestException as e:
-        return {'error' : e}
+        return {'error' : str(e)}
     
     data = {}
     response_string = ''
