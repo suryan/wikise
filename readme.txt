@@ -16,7 +16,7 @@ Python libraries  :
                on submit returns revision ids 
 
   2. Json response http://localhost:8000/info/?article=<article name>
-     Example: http://localhost:8000/info/?article=eclipse
+     Example: http://localhost:8000/info/?article=Eclipse
 
 Alternate webserver (High Performance)
   1. Modfiy file uwsgi.ini with correct directory path .
