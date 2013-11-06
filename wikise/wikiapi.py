@@ -3,12 +3,6 @@ Created on 01-Nov-2013
 
 @author: suryan
 
-New method
-test1 = root.findall(".//*[@class='mw-changeslist-date']")
-test2 = root.findall(".//*[@class='mw-userlink']")
-dict in dict 
-and exec() for execution
-eval()
 '''
 
 import requests
