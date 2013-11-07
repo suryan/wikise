@@ -27,13 +27,11 @@ Alternate webserver (High Performance)
 3. Change Log            | 
 -------------------------|  
 
-Release notes 0.7
------------------
-1. fixed https://github.com/suryan/wikise/issues/1
 
 Release notes 0.6
 -----------------
  1. Bug fix : Display network errors correctly 
+ 2. Fixed https://github.com/suryan/wikise/issues/1
 
 Release notes 0.5
 -----------------
