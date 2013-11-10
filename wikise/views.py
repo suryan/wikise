@@ -9,8 +9,7 @@ from django import template
 from django.http import HttpResponse
 import json
 import re
-from wikiapi import parse_xml
-from wikiapi import parse_html
+from wikiapi import fetch
 
 def index(request) :
     if request.method == "POST":
@@ -22,7 +21,7 @@ def index(request) :
                             context_instance=template.RequestContext(request))
         
         article = wiki_url.replace('http://en.wikipedia.org/wiki/','')
-        data = parse_html(article,['id'])
+        data = fetch(article,['id'])
         revision_ids = []
         if data['error'] == 0 :
             revision_ids = data['result']['id']
@@ -33,6 +32,6 @@ def index(request) :
     
 def info(request) :
     article = request.GET.get('article')
-    data = parse_html(article, ['id', 'username', 'timestamp'])
+    data = fetch(article, ['id', 'username', 'timestamp'])
     jsonResult = json.dumps(data, separators=(',',':'))
     return HttpResponse(jsonResult, mimetype='application/json') 

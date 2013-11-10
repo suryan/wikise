@@ -7,8 +7,15 @@ Created on 01-Nov-2013
 
 import requests
 import xml.etree.ElementTree as ET
+import settings
 
-def parse_xml(article,attribs) :
+def fetch(article, attribs):
+    if settings.PARSING == 'HTML' :
+        return parse_html(article, attribs)
+    else :
+        return parse_xml(article, attribs)    
+
+def parse_xml(article, attribs) :
     ''' Fetch attributes of the article via  POST from 
         http://en.wikipedia.org/w/index.php'''
     

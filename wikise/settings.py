@@ -7,6 +7,10 @@ TEMPLATE_DEBUG = DEBUG
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
+#Type of data to be consumed from wikipedia 
+# HAS TWO values HTML or XML .
+# HTML is faster but artcile names are case sensitive 
+PARSING = 'HTML'
 
 MANAGERS = ADMINS
 
